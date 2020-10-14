@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- judul pada laman browser -->
+	<title>Menyisipkan Elemen Berupa Text</title>
+</head>
+<!-- isian content / badan halaman -->
+<body>
+	<!-- tag <font> pada label 'Data Diri' yang memiliki atribut type dengan value arial untuk mengatur jenis font,
+		atribut color dengan value black untuk mengatur warna font, dan atribut size dengan value 6 untuk ukuran font -->
+	<font type=arial color=black size="6">Data Diri</font>
+	<!-- tag <br> untuk membuat garis baru -->
+	<br><br>
+	<!-- tag <font> pada label 'nama' dan 'nim' yang memiliki atribut type dengan value arial untuk mengatur jenis	font dan atribut size dengan value 5 untuk ukuran font -->
+	<font type=arial size="5">
+		<!-- tag <input> untuk inputan pada label 'nama' berbentuk kolom yang memiliki atribut type dengan value text untuk
+			mengatur jenis inputan dan atribut name dengan value nama sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		nama : <input type="text" name="nama">
+		<br><br>
+		<!-- tag <input> untuk inputan pada label 'nim' berbentuk kolom yang memiliki atribut type dengan value text untuk
+			mengatur jenis inputan, atribut name dengan value nim sebagai penamaan untuk menyimpan inputan yang diinputkan,
+			atribut value dengan value null untuk mengatur kolom inputan dalam kondisi null / kosong, atribut maxlength dengan value 9 untuk mengatur maksimal value yang diinputkan, dan atribut size dengan value 9 untuk mengatur panjang ukuran kolom -->
+		nim : <input type="text" name="nim" value="" maxlength="9" size="9">
+	</font>
+</body>
+</html>

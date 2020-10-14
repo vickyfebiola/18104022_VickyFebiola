@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- tag <meta> digunakan sebagai identitas yang akan muncul, memiliki atribut charset menggunakan karakter ASCII -->
+	<meta charset="utf-8"/>
+	<!-- judul pada laman browser -->
+	<title>Form</title>
+</head>
+<!-- isian content / badan halaman -->
+<body>
+	<!-- tag <form> untuk membuat form, memiliki atribut action dengan value null berarti tidak ada aksi lanjutan, atribut method dengan value POST berarti metode pengiriman datanya dilakukan secara langsung jadi URL yang ditampilkan tidak panjang, dan atribut enctype dengan value multipart/form-data yang berarti tidak ada karakter yang dikodekan -->
+	<form action="" method="POST" enctype="multipart/form-data">
+		<!-- tag <label> untuk pembuatan label untuk 'name' -->
+		<label for="name">Name : </label>
+		<!-- tag <input> untuk inputan pada label 'name' berbentuk kolom yang memiliki atribut type dengan value text untuk
+			mengatur jenis inputan dan atribut name dengan value nama sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<input type="text" name="name">
+		<!-- tag <br> untuk membuat garis baru -->
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'gender' -->
+		<label for="gender">Gender : </label>
+		<!-- tag <input> untuk inputan yang memiliki atribut type dengan value radio bentuknya pilihan radiobutton sebagai jenis inputannya dan atribut name dengan value gender sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<input type="radio" name="gender">Man
+		<input type="radio" name="gender">Woman
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'address' -->
+		<label for="address">Address : </label>
+		<!-- tag <input> untuk inputan pada label 'address' berbentuk kolom yang memiliki atribut type dengan value text untuk
+			mengatur jenis inputan dan atribut name dengan value address sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<input type="text" name="address">
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'country' -->
+		<label for="country">Country : </label>
+		<!-- tag <select> yaitu digunakan untuk pilihan / list, memiliki atribut name dengan value country sebagai penamaan untuk menyimpan inputan yang diinputkan-->
+		<select name="country">
+			<!-- tag <option> yaitu label yang ada dalam list <select>, memiliki atribut value untuk penamaan valuenya-->
+			<option value="indonesia">Indonesia</option>
+			<option value="malaysia">Malaysia</option>
+			<option value="singapura">Singapura</option>
+		</select>
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'email' -->
+		<label for="email">Email : </label>
+		<!-- tag <input> untuk inputan pada label 'email' berbentuk kolom yang memiliki atribut type dengan value email untuk
+			mengatur jenis inputan yang akan otomatis mengatur inputan harus mengandung karakter '@' dan atribut name dengan value email sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<input type="email" name="email">
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'photo' -->
+		<label for="photo">Photo : </label>
+		<!-- tag <input> untuk inputan pada label 'photo' yang memiliki atribut type dengan value file untuk meng-upload file sebagai jenis inputannya dan atribut name dengan value photo sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<input type="file" name="photo">
+		<br><br>
+		<!-- tag <label> untuk pembuatan label untuk 'comment' -->
+		<label for="comment">Comment : </label>
+		<!-- tag <textarea> untuk menampilkan kolom textarea yang memiliki atribut name dengan value comment sebagai penamaan untuk menyimpan inputan yang diinputkan -->
+		<textarea name="comment"></textarea>
+		<!-- tag <button> untuk penggunaan button dalam form memiliki atribut type dengan value submit yang berarti akan mengirimkan value yang diinputkan -->
+		<button type="submit">Submit</button>
+		<br><br>
+	</form>
+</body>
+</html>
