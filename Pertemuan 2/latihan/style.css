@@ -1,0 +1,77 @@
+/*agar keseluruhan body tidak ada spasi/batas.
+menggunakan font arial*/
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+}
+
+/*penggunaan warna dan mengatur tinggi pada navbar.
+mengatur posisi teks, ukuran, warna, dan dekorasinya */
+.nav{
+	background-color: #F6C123;
+	height: 70px;
+	text-align: right;
+	color: #CFCEC8;
+	line-height: 70px;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+/*mengatur batas antar bar menggunakan margin*/
+.nav a{
+	margin-right: 50px;
+}
+
+/*mengatur efek pada bar yang ditunjuk*/
+.nav a:hover {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+/*penggunaan background image, mengatur ukuran, tinggi, lebar, opacity, posisi.
+mengatur ketebalan teks dan posisinya*/
+.content{
+	background: url(img/bg-home.jpg) no-repeat center center;
+	background-size: cover;
+	height: 540px;
+	width: 1200px;
+	margin-left: 149px;
+	opacity: 0.7;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 25px;
+}
+
+/*mengatur posisi teks*/
+.news h3{
+	margin-left: 20px;
+}
+
+/*mengatur warna, tinggi, lebar, posisi pada bar news.
+mengatur posisi teks, jenis, tampilan*/
+.news{
+	background-color: #F5E378;
+	height: 565px;
+	width: 159px;
+	float: left;
+	margin-left: -10px;
+	font-style: italic;
+	position: relative;
+	display: inline;
+}
+
+/*mengatur jenis list*/
+.news ul{
+	list-style-type: circle; 
+}
+
+/*mengatur warna, tinggi, dan lebar footer.
+mengatur posisi teks*/
+.footer{
+    width:100%;
+    background-color:#F6C123;
+    text-align:center;
+    height:60px;
+    line-height:80px;
+}

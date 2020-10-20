@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- judul tab web -->
 	<title>Latihan CSS</title>
+	<!-- untuk terhubung dengan file css / eksternal css-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- penggunaan internal css -->
 	<style>
+	/*mengatur warna teks dan warna background*/
 		h1 {
             color: #f00;
             background-color: #FFFF00;
         }
+
+        /*mengatur box model / posisinya.
+        mengatur warna background dan warna teks*/
         #kotak {
             padding: 50px;
             width: 100px;
@@ -15,16 +22,20 @@
             background-color: #ccc;
             color: #f00;
         }
+
+        /*mengatur box model / posisinya.
+        mengatur border/tepi pada form*/
         .inputform {
             margin-top: 10px;
             margin-left: 20px;
             border: solid 1px #355388;
             border-radius: 50px;
         }
+
+        /*mengatur warna teks*/
         #kotak {
             color: #0ff;
         }
-
 	</style>
 </head>
 <body>
@@ -32,6 +43,7 @@
 	<div id="kotak">
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
 	</div>
+	<!-- penggunaan inline css untuk mengatur warna background dan warna teks -->
 	<div id="kotak" style="background: #ff0; color: #00f;">
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
 	</div>
@@ -39,8 +51,10 @@
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
 	</div>
 
+	<!-- input form -->
 	<input type="text" name="nama" class="inputform" placeholder="Masukkan Nama">
 
+	<!-- tabel -->
 	<table class="tb" border="1px">
 		<tr>
 			<th>Nama</th>
@@ -50,7 +64,7 @@
 			<td>Vicky Febiola</td>
 			<td>RPL</td>
 		</tr>
-		<tr>h1
+		<tr>
 			<td>Brian Nur</td>
 			<td>RPL</td>
 		</tr>
