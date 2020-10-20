@@ -1,24 +1,29 @@
+/*mengatur tabelnya*/
 .tb {
     border-collapse: collapse;
     margin-top: 10px;
     width: 200px;
 }
 
+/*mengatur posisi isi kolom pada tabel*/
 .tb td {
    text-align: center; 
 }
 
+/*mengatur efek ketika teks ditunjuk*/
 h1:hover {
     color: #222;
     background: #ccc;
     text-decoration: underline;
 }
 
+/*mengatur efek yang akan terjadi jika kotak diklik*/
 #kotak:active {
     background-color: #f00;
     font-size: 30px;
 }
 
+/*mengatur warna */
 .tb tr:nth-child(odd) {
     background-color: #f00;
 }
