@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- judul pada laman web -->
+    <title>Hello World</title>
+  </head>
+  <body></body>
+  <!-- me-load file eksternal javascript -->
+  <script src="script.js"></script>
+  <script>
+    //variable => var, let, const
+    let pesan = "ini pesan";
+    alert(pesan);
+    let bil1 = 5;
+    let bil2 = 6;
+    console.log(bil1 * bil2);
+    let a = 5;
+    a += 1;
+    // menampilkan hasil alert dan menampilkannya
+    alert(a);
+    let umur = 20;
+    // kondisi percabangan jika value dalam variabel umur lebih dari 17 maka output 'Dewasa', jika bukan maka output 'Bukan Dewasa'
+    if (umur >= 17) {
+      console.log("Dewasa");
+    } else {
+      console.log("Bukan Dewasa");
+    }
+
+   
+    let x = 95;
+    // kondisi percabangan jika value dalam variabel x lebih dari sama dengan 80 maka output 'Nilai A',
+    // jika value dalam variabel x kurang dari 80 dan lebih dari sama dengan 70 maka output 'Nilai B'
+    // jika value dalam variabel x kurang dari 70 dan lebih dari sama dengan 60 maka output 'Nilai C'
+    // jika value dalam variabel x kurang dari 60 atau selain kondisi pada sebeleumnya maka output 'Nilai D'
+
+    if (x >= 80) {
+      alert("Nilai A");
+    } else if (x >= 70 && x < 80) {
+      alert("Nilai B");
+    } else if (x >= 60 && x < 70) {
+      alert("Nilai C");
+    } else {''
+      alert("Nilai D");
+    }
+  </script>
+</html>
