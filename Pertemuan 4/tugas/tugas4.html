@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery 4</title>
+	<style>
+	/*mengatur kode css*/
+		#message {
+	        opacity: 0;
+	        color: black;
+	        transition: all 0.5s ease;
+      	}
+    	#mask {
+	        color: black;
+	        transition: all 0.5s ease;
+      	}
+      	.henshin {
+	        opacity: 0;
+	        transition: all 0.2s ease;
+      	}
+      	.show {
+	        opacity: 1 !important;
+	        transition: all 0.5s ease;
+      	}
+	</style>
+</head>
+<body>
+	<!-- tag paragraf untuk teks -->
+	<p id="mask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! Deserunt, inventore obcaecati perferendis modi architecto sint!</p>
+	
+	<!-- tag paragraf untuk teks -->
+	<p id="message">Assalamualaikum</p>
+
+	<!-- tag button untuk tombol Ganti -->
+    <button>Ganti</button>
+
+    <!-- me-load script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    	// menambah listener click pada tag button Ganti
+    	$("button").on("click", function () {
+	        // ketika button di klik maka akan toggle class show (menampilkan) seperti pada id message pada tag p
+	        $("#message").toggleClass("show");
+
+	        // akan toggle class henshin pada tag p
+	        $("p").toggleClass("henshin");
+      	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery</title>
+</head>
+<body>
+	<!-- tag h1 dengan id hello -->
+	<h1 id="hello">Aku hilang kalo diklik :(</h1>
+
+	<!-- tag paragraf untuk teks  -->
+	<p>hi mas</p>
+
+	<!-- tag input untuk teks -->
+	<input type="text" name="nama" id="teks"/>
+	
+	<!-- me-load script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		// ketika document sudah ready (sudah terload)
+		$(document).ready(function () {
+			// menambah listener click pada id hello pada tag h1
+			$("#hello").on("click", function () {
+				// hide id hello, ketika bagian id hello diklik maka teksnya akan hilang
+				$(this).hide();
+			});
+
+			// menambah listener hover pada tag p
+			$("p").hover(function () {
+			  // mengubah isi tag p menjadi seperti teks dibawah ini ketika mouse diarahkan ke teks
+			  $(this).html("Tapi kamunya engga :(");
+			});
+
+			// menambah listener onfocus pada id teks pada tag input
+			$("#teks").focus(function () {
+				// menambah properti css width dengan value 500px pada kolom
+				$(this).css("width", "500px");
+			});
+		});
+	</script>
+</body>
+</html>

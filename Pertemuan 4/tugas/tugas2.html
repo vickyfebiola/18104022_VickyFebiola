@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery 2</title>
+</head>
+<body>
+	<!-- tag paragraf untuk teks -->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! Deserunt, inventore obcaecati perferendis modi architecto sint!</p>
+
+	<!-- tag button untuk tombol hide -->
+	<button id="hide">Hide</button>
+
+	<!-- tag button untuk tombol show -->
+    <button id="show">Show</button>
+
+    <!-- me-load script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    	// menambah listener click pada id hide pada tag button
+    	$("#hide").on("click", function () {
+            // menjalankan method hide pada tag p dengan durasi setengah detik
+            $("p").hide(500);
+     	});
+
+    	// menambah listene click pada id show pada tag button
+    	$("#show").on("click", function () {
+            // menjalankan method show pada tag p dengan durasi setengah detik
+            $("p").show(500);
+     	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan jQuery 3</title>
+</head>
+<body>
+	<!-- tag input untuk bil1 -->
+	<input type="number" name="bil1" id="bil1">
+
+	<!-- tag select untuk dropdown operator -->
+	<select name="" id="operator">
+		<option type="x">+</option>
+		<option type="x">-</option>
+		<option type="x">*</option>
+		<option type="x">/</option>
+	</select>
+
+	<!-- tag input untuk bil2 -->
+	<input type="number" name="bil2" id="bil2">
+
+	<!-- tag input untuk button -->
+	<input type="button" value="Kalkulasi" id="btnTambah"/>
+
+	<!-- me-load script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		// menambah listener click pada id btnTambah (button Kalkulasi)
+    	$("#btnTambah").on("click", function () {
+            // get value dari id bil1
+            let bil1 = $("#bil1").val();
+            // get value dari id bil2
+            let bil2 = $("#bil2").val();
+            // mengecek jika kedua bilangan harus angka menggunakan fungsi isNan() dan tidak boleh kosong
+            if (isNaN(bil1) || isNaN(bil2) || bil1 == "" || bil2 == "")
+            	{
+            		// akan menampilkan alert seperti di bawah
+    	          	alert("Masukan angka dulu");
+    	         	return;
+            	}
+            // get value operator pada id operator
+            const operator = $("#operator").val();
+            let hasil;
+            // seleksi kondisi operator menggunakan switch
+            switch ($("#operator").val()) {
+            	case "+":
+                hasil = parseInt(bil1) + parseInt(bil2);
+                break;
+            	case "-":
+                hasil = parseInt(bil1) - parseInt(bil2);
+                break;
+            	case "*":
+                hasil = parseInt(bil1) * parseInt(bil2);
+                break;
+            	case "/":
+                hasil = parseInt(bil1) / parseInt(bil2);
+                break;
+            }
+            // menampilkan alert hasil dan mengambil value dari variabel hasil
+            alert("Hasil : " + hasil);
+    	});
+	</script>
+</body>
+</html>
