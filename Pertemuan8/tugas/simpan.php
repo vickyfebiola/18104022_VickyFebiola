@@ -63,7 +63,26 @@
             echo "Sorry, file already exists.";
             $error = true; 
         }
-
+        // kondisi untuk size file, tidak boleh lebih dari 1mb
+        if ($_FILES["gambar"]["size"] > 500000) {
+            echo "Sorry, your file is too large.";
+            $error = true; 
+        }
+        // kondisi untuk tipe file
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            $error = true; 
+        }
+        // kondisi jika file gagal terupload
+        if ($error == true) {
+            echo "Sorry, your file was not uploaded."; 
+        } else {
+            if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file)) {
+                echo "The file ". basename( $_FILES["gambar"]["name"]). " has been uploaded.";
+            } else {
+                echo "Sorry, there was an error uploading your file."; 
+            } 
+        }
         // kondisi jika data berhasil tersimpan dan tidak
         if($add) {
             $conn->close();
