@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// route untuk index (home) dan about
+// route untuk halaman home, about, mahasiswa, tambah/edit/delete mahasiswa
 Route::get('/', 'MyController@index' )->name('index');
 Route::get('/about','MyController@about')->name('about');
+Route::get('/mahasiswa','StudentController@index')->name('student.index');
+Route::get('/mahasiswa/add','StudentController@create')->name('student.create');
+Route::post('/mahasiswa/tambah','StudentController@store')->name('student.store');
+Route::get('/mahasiswa/edit/{id}','StudentController@edit')->name('student.edit');
+Route::put('/mahasiswa/edit/{id}','StudentController@update')->name('student.update');
+Route::delete('/mahasiswa/delete/{id}','StudentController@destroy')->name('student.destroy');

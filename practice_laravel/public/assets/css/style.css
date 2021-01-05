@@ -565,6 +565,33 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Add Data 
+--------------------------------------------------------------*/
+.add h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.add ul {
+  list-style: none;
+  padding: 0;
+}
+
+.add ul li {
+  padding-bottom: 10px;
+}
+
+.add ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #70b9b0;
+}
+
+.add p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {

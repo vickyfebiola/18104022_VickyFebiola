@@ -22,6 +22,10 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
 
+    <!-- Loas CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+
     <!-- Load File Template Main CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
@@ -39,8 +43,9 @@
       <!-- .nav-menu -->
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
+            <!-- mengarahkan sesuai ke url route nya -->
           <li class="active"><a href="{{route ('index') }}">Home</a></li>
-          <li><a href="#about">Mahasiswa</a></li>
+          <li><a href="{{route ('student.index') }}">Mahasiswa</a></li>
           <li><a href="{{route ('about') }}">About</a></li>
         </ul>
       </nav>
@@ -64,6 +69,11 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Load JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Load File Template Main JS -->
     <script src="assets/js/main.js"></script>
