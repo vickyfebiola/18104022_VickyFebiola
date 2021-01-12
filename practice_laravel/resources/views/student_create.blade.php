@@ -1,9 +1,9 @@
 @extends('template.base')
 @section('content')
-<section id="add" class="add">
+
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
             <h3>Tambah Data Mahasiswa</h3>
             <!-- data yang disubmit pada form akan dilanjutkan ke proses pada fungsi store -->
             <form action="{{ route('student.store') }}" method="post">
@@ -68,5 +68,5 @@
             </div>
         </div>
     </div>
-</section>
+
 @endsection
